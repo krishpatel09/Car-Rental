@@ -348,11 +348,11 @@ $_SESSION['brndid']=$result->bid;
           <form method="post">
             <div class="form-group">
               <label>From Date:</label>
-              <input type="date" class="form-control" name="fromdate" placeholder="From Date" required>
+              <input type="date" class="form-control" name="fromdate" placeholder="From Date" required  min="<?php echo date('Y-m-d'); ?>">
             </div>
             <div class="form-group">
               <label>To Date:</label>
-              <input type="date" class="form-control" name="todate" placeholder="To Date" required>
+              <input type="date" class="form-control" name="todate" placeholder="To Date" required  min="<?php echo date('Y-m-d'); ?>">
             </div>
             <div class="form-group">
               <textarea rows="4" class="form-control" name="message" placeholder="Message" required></textarea>
